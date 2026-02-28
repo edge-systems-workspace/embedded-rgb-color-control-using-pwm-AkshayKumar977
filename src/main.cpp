@@ -18,13 +18,14 @@
 
  int bluePin = 11;
  // Define BLUE pin (Use 11)
-
 void setup() {
 
-    // T
+    Serial.begin(9600);
     // Initialize Serial communication (9600 baud)
 
-    // TODO 5:
+    pinMode(redPin, OUTPUT);
+    pinMode(greenPin, OUTPUT);
+    pinMode(bluePin, OUTPUT);
     // Configure RGB pins as OUTPUT
 
     // TODO 6:
