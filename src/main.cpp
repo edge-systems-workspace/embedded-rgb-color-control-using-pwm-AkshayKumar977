@@ -28,7 +28,7 @@ void setup() {
     pinMode(bluePin, OUTPUT);
     // Configure RGB pins as OUTPUT
 
-    // TODO 6:
+    Serial.println("RGB LED Control Initialized");
     // Print initialization message
 }
 
@@ -36,23 +36,23 @@ void loop() {
 
     // -------- DIGITAL MODE --------
 
-    // TODO 7:
+    digitalWrite(redPin,HIGH);
     // Turn ON red (digital HIGH)
 
-    // TODO 8:
+    digitalWrite(redPin,LOW);
     // Turn OFF red
 
     // -------- ANALOG (PWM) MODE --------
 
-    // TODO 9:
+    analogWrite(redPin,125);
     // Set RED brightness using analogWrite()
 
-    // TODO 10:
+    analogWrite(greenPin,255);
     // Set GREEN brightness using analogWrite()
 
-    // TODO 11:
+    analogWrite(bluePin,211);
     // Set BLUE brightness using analogWrite()
 
-    // TODO 12:
+    delay(1000);
     // Add delay for visible transition
 }
